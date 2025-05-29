@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-color: #fff;
+  }
+  
+  .container-header {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 20px; 
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  .header {
+    background-image: #f5f5f5;
+    padding: 20px 0 20px 0; 
+
+  }
+  .header .icon-header { 
+    height: 50px; 
+    width: 75px; 
+  
+  }
+  .header .logo {
+    font-size: 1.5rem;
+    font-weight: bold; 
+    padding-top: 6px; 
+  }
+  .header nav { 
+    padding-top: 10px;
+  }
+  .header nav a { 
+    margin: 10px 20px 0 20px;
+    text-decoration: none;
+    color: #333; 
+    font-size: 18px; 
+  }
+  .header .address { 
+    font-size: 18px; 
+    padding-top: 10px;
+  }
+  .header .phone {
+    font-weight: bold;  
+    font-size: 18px; 
+    padding-top: 10px;
+  } 
+  .phone #number-design { 
+    color: black; 
+    text-decoration: none; 
+  } 
+  #number-design:hover { 
+    color: gray; 
+    text-decoration: underline; 
+  }
+  .header .fa-location-arrow { 
+    margin-right: 5px;
+  } 
+  .header .fa-phone { 
+    margin-right: 5px;
+  }
+  .hero {
+    background: #e8eef6;
+    padding: 60px 0;
+  }
+  
+  .container-hero { 
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .hero-text {
+    flex: 1; 
+    align-self: center;
+  }
+  
+  .hero-text h1 {
+    font-size: 2.3rem;
+    margin-bottom: 10px; 
+    
+  }
+  
+  .hero-text p {
+    margin-bottom: 20px; 
+    max-width: 75%; 
+    font-size: 21px; 
+  }
+  
+  .hero-image img {
+    max-width: 500px; 
+    box-shadow: -25px -40px 1px 1px orange;
+  }
+  
+  /* дизайн about-all про почему стоит обратиться к нам */ 
+  .about-all {
+    padding: 40px 20px; 
+  }
+  .about-all .about-title { 
+    text-align: center; 
+    font-size: 30px; 
+  }
+  .main-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 40px;
+  }
+  
+  .container-experts { 
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px; 
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 70px; 
+  } 
+  
+  .about-image img, .works-image img {
+    width: 100%;
+    height: auto;
+  } 
+  .about-title { 
+    margin-bottom: 15px; 
+    padding-top: 63px;
+  } 
+  .about-text { 
+    line-height: 35px;
+  }
+  .custom-list p { 
+    padding-left: 24px;
+    position: relative;
+  }
+
+  .custom-list p::before {
+    content: "\f00c"; /* код галочки Font Awesome */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: green;
+  } 
+  .about-float-left { 
+      float: left;
+      width: 50%;
+      padding-right: 40px;
+  }  
+
+ 
+    /* Дизайн блока с преимуществами каркасных домов */  
+  .features .feature-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .feature-card {
+    flex: 1 1 30%;
+    background: #f9f9f9;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    margin: 20px 0px; 
+  }
+
+  .features {
+    padding: 0px 20px 0 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .features-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #000;
+  }
+  
+  .feature-cards {
+    display: flex; /* в строку */
+    justify-content: space-between;
+    flex-wrap: wrap; /* позволяет переход на следующую строку при нехватке места */
+  }
+  
+  .feature-card {
+    min-width: 280px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #f57c00;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s; 
+    margin: 20px; 
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-card .icon {
+    font-size: 36px;
+    color: #f57c00;
+    margin-bottom: 15px;
+  }
+  
+  .feature-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  .feature-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  } 
+  .icon {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+  }
+  
+
+  /* дизайн секции по работам на участке */
+  .container-works { 
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px; 
+    margin-top: 70px;
+  }
+  
+  .works-title { 
+    text-align: start; 
+    font-size: 30px; 
+    margin-bottom: 15px; 
+    padding-top: 5px;
+  } 
+  .works-image img { 
+    max-width: 500px; 
+    box-shadow: -25px -40px 1px 1px rgb(173, 230, 240);
+  }  
+
+  .works-float-left {
+    float: left;
+    width: 50%;
+    padding-right: 20px; 
+  }
+  
+  .works-float-right {
+    float: right;
+    width: 50%;
+    padding: 60px 0 0 50px;
+    box-sizing: border-box; 
+ 
+  } 
+
+  .works-text { 
+    line-height: 30px; 
+  } 
+  .works-text img { 
+    width: 40px; 
+    height: 40px; 
+    margin-right: 10px; 
+    
+  } 
+  .work-illustration { 
+    display: flex; 
+    margin-top: 6px;
+  }
+  /* Дизайн галереи проектов компании */ 
+  .projects {
+    padding: 60px 0;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  .container-projects { 
+    max-width: 1350px;
+    margin: auto;
+    padding: 0 20px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+  }
+  .projects h2 {
+    margin-bottom: 40px; 
+    font-size: 32px;
+  }
+  
+  .slider {
+    position: relative;
+    overflow:hidden; 
+    max-width: 100%; 
+    max-height: 500px; 
+    scroll-behavior: smooth; 
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; 
+  }
+  
+  .slides img {
+    width: 33.3333%; 
+    flex: 0 0 calc(100% / 3); 
+    object-fit: cover;
+    margin-right: 10px;  
+  }
+  
+  .slider-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 10px;
+  }
+  
+  .slider-controls button {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }  
+  /* Модальная галерея */ 
+  .image-modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.95);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 9999;
+  }
+  
+  .image-modal img {
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  
+  .modal-nav {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+  }
+  .modal-nav #prevModal { 
+    margin-right: 20px; 
+  } 
+  .modal-nav #nextModal { 
+    margin-left: 20px;
+  }
+  .modal-nav button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+  }
+   
+  /* футер */ 
+
+  .footer {
+    padding: 60px 0;
+    background: #222;
+    color: #fff;
+    text-align: center;
+  } 
+
+  .container-footer .icon-footer,#logo-footer,#copyright { 
+    display: inline-block;
+  } 
+  .container-footer img { 
+    height: 50px; 
+    width: 75px; 
+    position: relative; 
+    float: left;    
+    left: 70px;  
+    bottom: 25px;
+  }
+
+  .container-footer #logo-footer { 
+    float: left; 
+    position: relative; 
+    left: 96px; 
+    bottom: 15px; 
+    font-size: 22px;
+  } 
+  .container-footer #copyright { 
+    position: relative; 
+    float: right; 
+    right: 100px; 
+    bottom: 10px; 
+    font-size: 16px;
+  }
+/* Адаптивный дизайн */
+/* Планшеты и устройства до 1024px */
+@media (max-width: 1024px) {
+  .container-header,
+  .container-hero,
+  .container-experts,
+  .container-works,
+  .container-projects {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header nav a {
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  .hero-text p {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    box-shadow: none;
+    margin-top: 20px;
+  }
+
+  .about-float-left,
+  .works-float-left,
+  .works-float-right {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .features .feature-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .works-image img {
+    max-width: 100%;
+    box-shadow: none;
+    margin-bottom: 20px;
+  }
+
+  .slider .slides img {
+    width: 50%;
+    flex: 0 0 50%;
+  }
+
+  .container-footer img,
+  .container-footer #logo-footer,
+  .container-footer #copyright {
+    float: none;
+    position: static;
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+  }
+}
+
+/* Смартфоны и устройства до 768px */
+@media (max-width: 768px) {
+  .container-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .header .logo {
+    padding-top: 0;
+  }
+
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .about-title,
+  .works-title,
+  .projects h2,
+  .features-title {
+    font-size: 24px;
+  }
+
+  .feature-card h3 {
+    font-size: 18px;
+  }
+
+  .feature-card p {
+    font-size: 14px;
+  }
+
+  .slider .slides img {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .slider-controls {
+    display: none;
+  } 
+
+  .footer {
+    padding: 40px 20px;
+    font-size: 14px;
+  }
+}
+
+
+  
+
+   
+  
+
+  
+
+  
+  
+
+  
